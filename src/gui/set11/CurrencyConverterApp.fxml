@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.set11.CurrencyConverterController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="336.6666666666667" minWidth="10.0" prefWidth="217.33333333333334" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="330.0" minWidth="0.0" prefWidth="119.33333333333334" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label alignment="CENTER" text="From:">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label text="To:" GridPane.rowIndex="1">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#calc" prefHeight="51.0" prefWidth="638.0" text="Berechnen" GridPane.columnSpan="2" GridPane.rowIndex="3">
+         <font>
+            <Font size="24" />
+         </font></Button>
+      <TextField fx:id="eingabe" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+      <TextField fx:id="result" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+      <ChoiceBox fx:id="curr1" prefWidth="150.0" GridPane.columnIndex="1" />
+      <ChoiceBox fx:id="curr2" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   </children>
+</GridPane>

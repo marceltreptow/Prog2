@@ -1,0 +1,18 @@
+
+    .root {
+        -fx-background-color: lightblue;
+        -fx-text-weight: bold;
+        -fx-font-size: 15;
+
+    }
+
+    .button{
+    -fx-background-color: #0000FF;
+    -fx-text-fill: #FFFFFF;
+
+    }
+
+    .button:hover {
+    -fx-background-color: #FF0000;
+
+    }

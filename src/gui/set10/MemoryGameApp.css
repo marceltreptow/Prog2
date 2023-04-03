@@ -1,0 +1,14 @@
+.root {
+        -fx-background-image: url("Background.jpg");
+        -fx-text-weight: bold;
+        -fx-font-size: 15;
+
+    }
+
+    .button:hover {
+    -fx-background-color: grey;
+
+    }
+
+
+
